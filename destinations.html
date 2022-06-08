@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>
+      Whitewater Rafting Vacations | Big Raft Adventures | Destinations
+    </title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+  </head>
+
+  <body>
+    <div id="content">
+      <header>
+        <div id="headerid"></div>
+        <!-- loads header-template.html as the #headerid for reuse-->
+        <script>
+          $("#headerid").load("/header-template.html");
+        </script>
+      </header>
+
+      <main>
+        <div>
+          <h2>World Famous Destinations</h2>
+
+          <div class="container-scrollbox">
+            <div class="sliding-background"></div>
+          </div>
+
+          <p id="para-no-margin">
+            Our trips are all run in some of the most remote areas of the United
+            States. We run a variety of rivers, with different difficulty
+            ratings and beautiful surroundings.
+          </p>
+
+          <h1 class="centered-h1">Browse Rivers in..</h1>
+          <div class="location-state-grid">
+            <div
+              class="loc-utah"
+              id="loc-utah-id"
+              onclick="selectState('loc-utah-id')"
+            >
+              <img src="images/Utah.webp" alt="utah location icon" />
+              <h2>Utah</h2>
+            </div>
+
+            <div
+              class="loc-colorado"
+              id="loc-colorado-id"
+              onclick="selectState('loc-colorado-id')"
+            >
+              <img src="images/Colorado.webp" alt="colorado location icon" />
+              <h2>Colorado</h2>
+            </div>
+
+            <div
+              class="loc-idaho"
+              id="loc-idaho-id"
+              onclick="selectState('loc-idaho-id')"
+            >
+              <img src="images/Idaho.webp" alt="idaho location icon" />
+              <h2>Idaho</h2>
+            </div>
+          </div>
+
+          <div id="no-state-selected">
+            <h2>Select a state to browse rivers!</h2>
+          </div>
+
+          <div id="utah-rivers">
+            <div class="river-box">
+              <div>
+                <h2>Desolation and Gray Canyon, Utah</h2>
+
+                <div class="rating-box">
+                  Difficulty Rating: &nbsp;&nbsp;&nbsp;
+                  <div class="checked">★</div>
+                  <div class="checked">★</div>
+                  <div class="checked">★</div>
+                  <div>★</div>
+                  <div>★</div>
+                </div>
+                <p>
+                  Winding through canyons in central Utah, in some of the most
+                  desolate land anywhere, the Green river flows towards the
+                  mighty Colorado river and the sea. High grey stone cliffs,
+                  beautiful desert scenery, and great rapids have made this run
+                  famous. This 84-mile trip runs from from Sand Wash to Swaseys
+                  Rapid (just outside Green River Utah) and boasts outstanding
+                  scenery, interesting geologic formations, evidence of
+                  prehistoric and historic human activity, and great whitewater
+                  opportunities.
+                </p>
+              </div>
+              <img src="images/utah-pic.jpg" alt="desolation River in Utah" />
+            </div>
+            <div class="river-box">
+              <div>
+                <h2>Provo River, Utah</h2>
+
+                <div class="rating-box">
+                  Difficulty Rating: &nbsp;&nbsp;&nbsp;
+                  <div class="checked">★</div>
+                  <div>★</div>
+                  <div>★</div>
+                  <div>★</div>
+                  <div>★</div>
+                </div>
+                <p>
+                  Super crowded river with tons of loud people. The water is
+                  cold and there's a bridge that will pop your raft if you don't
+                  get out and walk around it. There's a cool train in the canyon
+                  called the Heber Creeper. There are plenty of fly fishermen
+                  along the river banks so watch out! No extreme rapids. Pretty
+                  easy going. There's a drought this year so the water might be
+                  low. Watch out for BYU students.
+                </p>
+              </div>
+              <img src="images/salmon-cabins.jpg" alt="Provo River in Utah" />
+            </div>
+          </div>
+
+          <div id="colorado-rivers">
+            <div class="river-box">
+              <div>
+                <h2>Grand Canyon, Colorado</h2>
+
+                <div class="rating-box">
+                  Difficulty Rating: &nbsp;&nbsp;&nbsp;
+                  <div class="checked">★</div>
+                  <div class="checked">★</div>
+                  <div class="checked">★</div>
+                  <div class="checked">★</div>
+                  <div>★</div>
+                </div>
+                <p>
+                  Winding through canyons in central Colorado, in some of the
+                  most desolate land anywhere, the Colorado river flows towards
+                  the mighty Colorado river and the sea. High Colorado stone
+                  cliffs, beautiful Colorado scenery, and great rapids have made
+                  this run famous. This 84-mile trip runs from from Colorado
+                  Wash to Colorado Rapid (just outside Green River Colorado) and
+                  boasts outstanding scenery, interesting geologic formations,
+                  evidence of Colorado and historic human activity, and great
+                  whitewater Colorado.
+                </p>
+              </div>
+              <img src="images/snake-rapid2.jpg" alt="Grand Canyon Colorado" />
+            </div>
+            <div class="river-box">
+              <div>
+                <h2>Denver River, Colorado</h2>
+
+                <div class="rating-box">
+                  Difficulty Rating: &nbsp;&nbsp;&nbsp;
+                  <div class="checked">★</div>
+                  <div class="checked">★</div>
+                  <div>★</div>
+                  <div>★</div>
+                  <div>★</div>
+                </div>
+                <p>
+                  This river is so much fun. We provide water and lemonade
+                  during the day. Coffee, tea and hot chocolate are provided
+                  during the morning and evening hours. You may bring beer,
+                  liquor and soft drinks (in reasonable amounts, 2 cans per
+                  day). You may purchase these items either the night before the
+                  trip, or on your way to the put-in. 3 meals per day, plus
+                  snacks ...and dutch oven brownies... It's a great trip!
+                </p>
+              </div>
+              <img src="images/hermit1.jpg" alt="Denver River Colorado" />
+            </div>
+          </div>
+
+          <div id="idaho-rivers">
+            <div class="river-box">
+              <div>
+                <h2>Main Fork of the Salmon River, Idaho</h2>
+
+                <div class="rating-box">
+                  Difficulty Rating: &nbsp;&nbsp;&nbsp;
+                  <div class="checked">★</div>
+                  <div class="checked">★</div>
+                  <div class="checked">★</div>
+                  <div class="checked">★</div>
+                  <div class="checked">★</div>
+                </div>
+                <p>
+                  Nestled deep in the Frank Church Wilderness of No Return winds
+                  the Salmon river. The Salmon was given the nickname long ago
+                  as the River of rugged beauty and beavers. Around the river
+                  and there are bears and bighorn sheep. The river corridor is
+                  also lined with awe inspiring rapids!
+                </p>
+              </div>
+              <img
+                src="images/salmon-boat-beach.jpg"
+                alt="Salmon River Idaho"
+              />
+            </div>
+            <div class="river-box">
+              <div>
+                <h2>Snake River, Idaho</h2>
+
+                <div class="rating-box">
+                  Difficulty Rating: &nbsp;&nbsp;&nbsp;
+                  <div>☠</div>
+                  <div>☠</div>
+                  <div>☠</div>
+                  <div>☠</div>
+                  <div>☠</div>
+                </div>
+                <p>
+                  This river has a lot of snakes. It winds through mountains
+                  where snakes gather together and when you get too close they
+                  slither down stream to try and catch the helpless rafters.
+                  Luckily The Snake River also winds back and forth, like a
+                  snake, so if you are being followed you can paddle quickly
+                  around the next bend and try to get out of sight. The next
+                  time you feel like your being watched just remember to keep
+                  paddling.
+                </p>
+              </div>
+              <img src="images/rattle-snake.jpg" alt="Snake River Idaho" />
+            </div>
+          </div>
+        </div>
+      </main>
+
+      <footer>
+        <p>&copy; 2021 Big Raft Adventures - WDD 130.9</p>
+        <div class="social">
+          <a href="https://www.youtube.com/kylecoulon" target="_blank"
+            ><img src="images/youtube_logo.webp" alt="Youtube logo"
+          /></a>
+          <a href="https://www.facebook.com/kyle.coulon/" target="_blank"
+            ><img src="images/facebook_logo.webp" alt="Facebook logo"
+          /></a>
+          <a href="https://twitter.com/" target="_blank"
+            ><img src="images/twitter_logo.webp" alt="Twitter logo"
+          /></a>
+        </div>
+        <script src="js/logoscroll.js"></script>
+      </footer>
+    </div>
+  </body>
+</html>

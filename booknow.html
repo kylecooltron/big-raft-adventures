@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>
+      Whitewater Rafting Vacations | Big Raft Adventures | Destinations
+    </title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+  </head>
+
+  <body>
+    <div id="content">
+      <header>
+        <div id="headerid"></div>
+        <!-- loads header-template.html as the #headerid for reuse-->
+        <script>
+          $("#headerid").load("/header-template.html");
+        </script>
+      </header>
+
+      <main>
+        <div>
+          <h1 class="centered-h1">
+            Book Now!
+          </h1>
+
+          <div class="group-size-grid">
+            <div
+              class="group-small"
+              id="group-small-id"
+              onclick="selectGroup('group-small-id')"
+            >
+              <img
+                src="images/smallgroup.webp"
+                alt="small group icon"
+              />
+              <h2>
+                Small Groups
+              </h2>
+              <p>
+                1 - 15 people
+              </p>
+            </div>
+
+            <div
+              class="group-medium"
+              id="group-medium-id"
+              onclick="selectGroup('group-medium-id')"
+            >
+              <img
+                src="images/mediumgroup.webp"
+                alt="medium group icon"
+              />
+              <h2>
+                Medium Groups
+              </h2>
+              <p>
+                15 - 40 people
+              </p>
+            </div>
+
+            <div
+              class="group-large"
+              id="group-large-id"
+              onclick="selectGroup('group-large-id')"
+            >
+              <img
+                src="images/largegroup.webp"
+                alt="large group icon"
+              />
+              <h2>
+                Corporate Events
+              </h2>
+              <p>
+                40+ people
+              </p>
+            </div>
+          </div>
+
+          <div class="book-location-box">
+            <p>
+              Select Location
+            </p>
+            <h2>
+              ..where to?
+            </h2>
+            <p id="book-location-paragraph">
+              Nestled deep in the Frank Church Wilderness of No Return winds the
+              Salmon river. The Salmon was given the nickname long ago as the
+              River of No Return by the people living near it because of the
+              number of folks that came to visit and fell so in love with the
+              rugged beauty of the river that they never left.
+            </p>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15404.173076866347!2d-115.51562178329053!3d45.3711808920898!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54a71366233a3565%3A0x7b0514ccaca5a2a3!2sSouth%20Fork%20Salmon%20River!5e0!3m2!1sen!2sus!4v1624161942228!5m2!1sen!2sus"
+              width="300"
+              height="225"
+              style="border:0;"
+              allowfullscreen=""
+              loading="lazy"
+            ></iframe>
+          </div>
+
+          <div class="book-plan-description-box">
+            <div class="plan-1">
+              <h2>
+                PLAN 1
+              </h2>
+              <p>
+                Absolutely this is a good trip for children of all ages. We have
+                found however that children over the age of 8 seem to enjoy it
+                more overall (And parents especially enjoy it more if their
+                children are all over 8). A common concern we get from parents
+                is that their children will be bored stuck on a boat for hours
+                at a time.
+              </p>
+            </div>
+            <div class="plan-2">
+              <h2>
+                PLAN 2
+              </h2>
+              <p>
+                We will provide all necessary camping equipment. This includes a
+                sleeping bag, foam pad, waterproof duffle bag, small waterproof
+                day bag, tent and a cot, eating utensils and camping chair. We
+                provided water and lemonade during the day. You may purchase
+                these items either the night before the trip, or on your way to
+                the put-in. 3 meals per day, plus snacks.
+              </p>
+            </div>
+
+            <div class="link-box">
+              <a href="#">For more information check out the FAQ page.</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="select-plan-box">
+          <h2>
+            Select Plan
+          </h2>
+          <select name="plans" id="plans">
+            <option value="plan1">Plan 1</option>
+            <option value="plan2">Plan 2</option>
+          </select>
+        </div>
+
+        <div class="participant-info">
+            <h2>
+            Participant Information
+          </h2>
+          <form>
+            <div>
+            <label for="name">Name:</label><br />
+            <input type="text" id="name" name="name" value="John" /><br />
+            </div>
+              
+            <div>
+            <label for="age">Age:</label><br />
+            <input type="text" id="age" name="age" value="18+" /><br /><br />
+            </div> 
+              
+            <div>
+            <label for="experience">Experience Level:</label><br />
+            <input
+              type="radio"
+              id="beginner"
+              name="experience"
+              value="beginner"
+            />
+            <label for="beginner">beginner</label>
+            <input
+              type="radio"
+              id="advanced"
+              name="experience"
+              value="advanced"
+            />
+            <label for="advanced">advanced</label>
+            </div>
+            
+            <div id="form-submit-button">
+            <input type="button" value="Add New Participant" onclick="addParticipant()"/>
+            </div>
+          </form>
+        </div>
+        
+           <h2>
+            List of Participants: 
+          </h2>
+          <p>
+           <ul id="participants-list">
+             
+        </ul>
+        </p>
+        
+      </main>
+
+            <footer>
+        <p>&copy; 2021 Big Raft Adventures - WDD 130.9</p>
+        <div class="social">
+          <a href="https://www.youtube.com/kylecoulon" target="_blank"
+            ><img
+              src="images/youtube_logo.webp"
+              alt="Youtube logo"
+          /></a>
+          <a href="https://www.facebook.com/kyle.coulon/" target="_blank"
+            ><img
+              src="images/facebook_logo.webp"
+              alt="Facebook logo"
+          /></a>
+          <a href="https://twitter.com/" target="_blank"
+            ><img
+              src="images/twitter_logo.webp"
+              alt="Twitter logo"
+          /></a>
+        </div>
+        <script src="js/logoscroll.js"></script>
+      </footer>
+    </div>
+  </body>
+</html>
