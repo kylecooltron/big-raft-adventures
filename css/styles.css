@@ -1,6 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
 
+
+
+
+/* headings */
 h1,
 h2,
 h3,
@@ -14,346 +18,21 @@ h6 {
   padding: 10px;
 }
 
-#content {
-  max-width: 940px;
-  margin: 0 auto;
-  background-color: #11232C;
-  padding: 30px;
-}
-
-.home-paragraph-3 {
-  text-align: center;
-}
-body {
-  background-color: #2DC6F0;
-  font-family: "Oswald", sans-serif, Monospace;
-}
-
-main {
-  background-color: #11232C;
-}
-
-.home-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-  grid-gap: 1em;
-}
-.home-grid img {
-  max-width: 100%;
-  margin-top: 20px;
-}
-
-.home-headline-1 {
-  grid-column: 1 / 4;
-  grid-row: 1 / 2;
-}
-
-.home-paragraph-1 {
-  grid-column: 2 / 4;
-  grid-row: 2 / 4;
-}
-.home-right-img {
-  grid-column: 4 / 6;
-  grid-row: 1 / 3;
-}
-
-.home-headline-2 {
-  grid-column: 3 / 6;
-  grid-row: 4 / 5;
-}
-
-.home-paragraph-2 {
-  grid-column: 4 / 6;
-  grid-row: 5 / 7;
-}
-.home-left-img {
-  grid-column: 1 / 3;
-  grid-row: 4 / 6;
-}
-
-.home-paragraph-3 {
-  grid-column: 1 / 6;
-  grid-row: 7 / 8;
-}
-
-.home-left-img,
-.home-right-img {
-  border: 1px solid #ccc;
-  box-shadow: 3px 3px 10px #31A2ED;
-}
-
 .centered-h1 {
   text-align: center;
 }
 
 
-
-.group-size-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  width: 100%;
-  text-align: center;
-}
-.group-size-grid h2 {
-  background-color: #11232C;
-  padding: 0;
-}
-.group-size-grid div {
-  cursor: pointer;
-}
-
-.group-size-grid div :hover{
-    text-decoration: underline;
-}
-
-.group-size-grid img {
-  width: 60%;
-  margin-bottom: -20px;
-}
-
-
-
-
-
-.book-location-box {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  text-align: center;
-  background-color: #2DC6F0;
-}
-
-.book-location-box p {
-  grid-column: 2 / 3;
-  color: white;
-  margin: 0;
-
-}
-
-.book-location-box h2 {
-  grid-column: 1 / 2;
-  background-color: #2DC6F0;
-  letter-spacing: 0.2rem;
-  font-size: 1.8em;
-}
-
-#book-location-paragraph {
-  grid-column: 1 / 2;
-  padding: 40px;
-}
-
-.book-location-box iframe {
-  grid-column: 2 / 3;
-  display:block;
-  margin: 0 auto;
-  padding: 20px;
-  margin-top: -90px;
-}
-
-
-
-.book-plan-description-box{
-    display: grid;
-  grid-template-columns: 1fr 1fr;
-  text-align: center;
-   grid-gap: 25px;
-  padding: 25px;
-  margin-top: 25px;
-  background-image: url("https://cdn.glitch.com/10637c27-f6d2-4eb1-9a3c-3cc002008343%2Fwaterback.png?v=1624163413491");
-  
-}
-
-.book-plan-description-box div{
-border: 4px solid white;
-background-color:rgba(240, 240, 240, 0.9);
-}
-.link-box {
-    grid-column: 2 / 3;
-   font-size: 1.6em;
-}
-.link-box :hover{
-color: #2DC6F0;
-}
-
-
-
-
-.container-scrollbox {
-  overflow: hidden;
-}
-
-.sliding-background {
-    background: url("https://cdn.glitch.com/10637c27-f6d2-4eb1-9a3c-3cc002008343%2Fscrollingimages.png?v=1624167269360") repeat-x;
-  height: 500px;
-   width: 4030px;
-
-    animation-name: MOVE-BG;
-  animation-duration: 60s;
-  animation-timing-function: linear;
-  animation-iteration-count: infinite;
-}
-
-@keyframes MOVE-BG {
-   from {
-     transform: translateX(0);
-   }
-   to { 
-     transform: translateX(-2015px);
-   }
-}
-
-
-
-.select-plan-box {
-      display: grid;
-  grid-template-columns: 1fr 1fr;
-  text-align: center;
-   grid-gap: 25px;
-  padding: 25px;
-  background-color: white;
-}
-
-.select-plan-box select {
-height: 25px;
-margin-top: 34px;
-}
-
-
-
-
-
-
-.participant-info {
-    margin-top: 25px;
-    padding: 10px;
-}
-
-.participant-info form{
-      display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  text-align: center;
-   grid-gap: 5px;
-   background-color: #2DC6F0;
-  margin-top: 25px;
-  padding: 10px;
-}
-
-#form-submit-button {
-  grid-column: 3 / 4;
-}
-#form-submit-button input{
-  font-size: 1.2em;
-  padding: 5px;
-  padding-left: 20px;
-  padding-right: 20px;
-}
-
-
-
-#utah-rivers{
-  display: none;
-}
-#idaho-rivers{
-  display: none;
-}
-#colorado-rivers{
-  display: none;
-}
-#no-state-selected h2{
-   text-align: center;
-  background-color: white;
-  color: #2DC6F0;
-  margin: 100px;
-}
-
-
-.river-box {
-      display: grid;
-  grid-template-columns: 1fr 1fr;
-   grid-gap: 5px;
-   background-color: #2DC6F0;
-  padding: 10px;
-  text-align: center;
-  margin-top: 25px;
-  margin-bottom:25px;
-}
-.rating-box div{
-    display: inline-block
-}
-.checked{
-  color: white;
-}
-.river-box div p{
-  color: white;
-}
-.river-box img{
-padding: 60px;
-}
-
-
-#participants-list{
-  color: white;
-  font-size: 1.2em;
-}
-
-
-#para-no-margin{
-  margin-top:-80px;
-}
-
-.location-state-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  width: 100%;
-  text-align: center;
-}
-.location-state-grid  h2 {
-  background-color: #11232C;
-  padding: 0;
-}
-.location-state-grid  div {
-  cursor: pointer;
-}
-
-.location-state-grid  div :hover{
-    text-decoration: underline;
-}
-
-.location-state-grid  img {
-  width: 60%;
-  margin-bottom: -20px;
-}
-
-
-
-
-
-
-
-
-
-
-
-p {
-  color: #2DC6F0;
-  padding: 10px;
-  font-size: 1.2em;
-  line-height: 1.8em;
-}
-
-#big-logo-image {
-  width: 70%;
-  position: relative;
-}
-
+/* header */
 header {
   text-align: center;
   font-family: "Lobster", cursive, Monospace;
   font-size: 2em;
 }
-
-#headerid {
+#big-logo-image {
+  width: 70%;
+  position: relative;
 }
-
 .logo-box {
   display: grid;
   grid-template-columns: 1fr;
@@ -383,12 +62,12 @@ header {
   }
 }
 
+/* navigation  */
 .pic-and-nav-box {
   display: grid;
   grid-template-columns: 110px auto;
   align-items: center;
 }
-
 nav ul {
   list-style: none; /* removes the bullets! */
   display: grid;
@@ -400,7 +79,6 @@ nav ul {
   margin-left: -50px;
   border-radius: 20px;
 }
-
 nav a {
   color: #11232C;
   text-decoration: none;
@@ -410,28 +88,7 @@ nav a:hover {
   text-decoration: underline;
 }
 
-footer {
-  display: grid;
-  grid-template-columns: auto auto;
-  height: 55px;
-}
-footer p {
-  color: white;
-  line-height: 0em;
-}
-.social {
-  height: 55px;
-}
-.social img {
-  float: right;
-  margin-left: 10px;
-  max-width: 100%;
-  max-height: 100%;
-}
-.social img:hover {
-  border: 2px solid white;
-}
-
+/* banner */
 .banner-box {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -444,6 +101,291 @@ footer p {
   border-radius: 10px;
 }
 
+
+/* body */
+body {
+  background-color: #2DC6F0;
+  font-family: "Oswald", sans-serif, Monospace;
+}
+main {
+  background-color: #11232C;
+}
+p {
+  color: #2DC6F0;
+  padding: 10px;
+  font-size: 1.2em;
+  line-height: 1.8em;
+}
+
+
+
+#content {
+  max-width: 940px;
+  margin: 0 auto;
+  background-color: #11232C;
+  padding: 30px;
+}
+.container-scrollbox {
+  overflow: hidden;
+}
+#para-no-margin{
+  margin-top:-80px;
+}
+
+/* home grid */
+.home-paragraph-3 {
+  text-align: center;
+}
+.home-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-gap: 1em;
+}
+.home-grid img {
+  max-width: 100%;
+  margin-top: 20px;
+}
+.home-headline-1 {
+  grid-column: 1 / 4;
+  grid-row: 1 / 2;
+}
+.home-paragraph-1 {
+  grid-column: 2 / 4;
+  grid-row: 2 / 4;
+}
+.home-right-img {
+  grid-column: 4 / 6;
+  grid-row: 1 / 3;
+}
+.home-headline-2 {
+  grid-column: 3 / 6;
+  grid-row: 4 / 5;
+}
+.home-paragraph-2 {
+  grid-column: 4 / 6;
+  grid-row: 5 / 7;
+}
+.home-left-img {
+  grid-column: 1 / 3;
+  grid-row: 4 / 6;
+}
+.home-paragraph-3 {
+  grid-column: 1 / 6;
+  grid-row: 7 / 8;
+}
+.home-left-img,
+.home-right-img {
+  border: 1px solid #ccc;
+  box-shadow: 3px 3px 10px #31A2ED;
+}
+
+
+/* group grid */
+.group-size-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  width: 100%;
+  text-align: center;
+}
+.group-size-grid h2 {
+  background-color: #11232C;
+  padding: 0;
+}
+.group-size-grid div {
+  cursor: pointer;
+}
+
+.group-size-grid div :hover{
+    text-decoration: underline;
+}
+
+.group-size-grid img {
+  width: 60%;
+  margin-bottom: -20px;
+}
+
+/* location box */
+.book-location-box {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  text-align: center;
+  background-color: #2DC6F0;
+}
+
+.book-location-box p {
+  grid-column: 2 / 3;
+  color: white;
+  margin: 0;
+
+}
+.book-location-box h2 {
+  grid-column: 1 / 2;
+  background-color: #2DC6F0;
+  letter-spacing: 0.2rem;
+  font-size: 1.8em;
+}
+
+#book-location-paragraph {
+  grid-column: 1 / 2;
+  padding: 40px;
+}
+
+.book-location-box iframe {
+  grid-column: 2 / 3;
+  display:block;
+  margin: 0 auto;
+  padding: 20px;
+  margin-top: -90px;
+}
+
+.book-plan-description-box{
+    display: grid;
+  grid-template-columns: 1fr 1fr;
+  text-align: center;
+   grid-gap: 25px;
+  padding: 25px;
+  margin-top: 25px;
+  background-image: url("https://cdn.glitch.com/10637c27-f6d2-4eb1-9a3c-3cc002008343%2Fwaterback.png?v=1624163413491");
+  
+}
+.book-plan-description-box div{
+border: 4px solid white;
+background-color:rgba(240, 240, 240, 0.9);
+}
+.link-box {
+    grid-column: 2 / 3;
+   font-size: 1.6em;
+}
+.link-box :hover{
+color: #2DC6F0;
+}
+
+/* locations slide show scroller */
+.sliding-background {
+    background: url("https://cdn.glitch.com/10637c27-f6d2-4eb1-9a3c-3cc002008343%2Fscrollingimages.png?v=1624167269360") repeat-x;
+  height: 500px;
+   width: 4030px;
+
+    animation-name: MOVE-BG;
+  animation-duration: 60s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+@keyframes MOVE-BG {
+   from {
+     transform: translateX(0);
+   }
+   to { 
+     transform: translateX(-2015px);
+   }
+}
+
+
+/* sign up form */
+.select-plan-box {
+      display: grid;
+  grid-template-columns: 1fr 1fr;
+  text-align: center;
+   grid-gap: 25px;
+  padding: 25px;
+  background-color: white;
+}
+.select-plan-box select {
+height: 25px;
+margin-top: 34px;
+}
+.participant-info {
+    margin-top: 25px;
+    padding: 10px;
+}
+.participant-info form{
+      display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  text-align: center;
+   grid-gap: 5px;
+   background-color: #2DC6F0;
+  margin-top: 25px;
+  padding: 10px;
+}
+#form-submit-button {
+  grid-column: 3 / 4;
+}
+#form-submit-button input{
+  font-size: 1.2em;
+  padding: 5px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+#participants-list{
+  color: white;
+  font-size: 1.2em;
+}
+
+
+/* location information page */
+#utah-rivers{
+  display: none;
+}
+#idaho-rivers{
+  display: none;
+}
+#colorado-rivers{
+  display: none;
+}
+#no-state-selected h2{
+   text-align: center;
+  background-color: white;
+  color: #2DC6F0;
+  margin: 100px;
+}
+.river-box {
+      display: grid;
+  grid-template-columns: 1fr 1fr;
+   grid-gap: 5px;
+   background-color: #2DC6F0;
+  padding: 10px;
+  text-align: center;
+  margin-top: 25px;
+  margin-bottom:25px;
+}
+.rating-box div{
+    display: inline-block
+}
+.checked{
+  color: white;
+}
+.river-box div p{
+  color: white;
+}
+.river-box img{
+padding: 60px;
+}
+.location-state-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  width: 100%;
+  text-align: center;
+}
+.location-state-grid  h2 {
+  background-color: #11232C;
+  padding: 0;
+}
+.location-state-grid  div {
+  cursor: pointer;
+}
+
+.location-state-grid  div :hover{
+    text-decoration: underline;
+}
+
+.location-state-grid  img {
+  width: 60%;
+  margin-bottom: -20px;
+}
+
+
+/* action */
 .action {
   background-color: rgba(240, 240, 240, 0.55);
   margin: 1em 1em;
@@ -473,6 +415,33 @@ footer p {
   border: 4px solid #31A2ED;
 }
 
+
+
+/* footer */
+footer {
+  display: grid;
+  grid-template-columns: auto auto;
+  height: 55px;
+}
+footer p {
+  color: white;
+  line-height: 0em;
+}
+.social {
+  height: 55px;
+}
+.social img {
+  float: right;
+  margin-left: 10px;
+  max-width: 100%;
+  max-height: 100%;
+}
+.social img:hover {
+  border: 2px solid white;
+}
+
+
+
 @media screen and (max-width: 550px) {
   /* beginning of media query */
   .home-grid {
@@ -485,3 +454,5 @@ footer p {
   }
   /* end of media query */
 }
+
+

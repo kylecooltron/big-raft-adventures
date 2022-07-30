@@ -1,6 +1,6 @@
-var pos = 0;
-var current_top = 0;
-var turn = 0;
+let pos = 0;
+let current_top = 0;
+let turn = 0;
 
 function update() {
   pos = -$(window).scrollTop();
@@ -50,9 +50,9 @@ function selectState(i) {
 
 
 function addParticipant() {
-  var ul = document.getElementById("participants-list");
-  var li = document.createElement("li");
-  var text = document.getElementById("name").value;
+  const ul = document.getElementById("participants-list");
+  let li = document.createElement("li");
+  let text = document.getElementById("name").value;
   li.appendChild(document.createTextNode(text));
   ul.appendChild(li);
 }
